@@ -1,0 +1,7 @@
+name             'deluge'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures deluge'
+long_description 'Installs/Configures deluge'
+version          '0.1.0'
