@@ -1,4 +1,4 @@
-use_inline_resource
+use_inline_resources
 
 def get_config(resource)
   res = shell_out!(resource.deluge_console, '-c', resource.deluge_config, 'config', resource.setting)
