@@ -1,0 +1,14 @@
+# Defaults for deluged initscript
+# sourced by /etc/init.d/deluged
+
+# change to 1 to enable daemon
+ENABLE_DELUGED=1
+<%if @user %>USER=<%=@user%><%end%>
+<%if @mask %>MASK=<%=@mask%><%end%>
+<%
+    config_string='-d'
+    config_string+=" -c #{@config_dir}" if @config_dir
+    config_string+=" -l #{@log_location}" if @log_location
+    config_string+=" -L #{@log_level}" if @log_level
+%>
+DAEMON_ARGS="<%=config_string%>"
