@@ -3,7 +3,7 @@ use_inline_resources
 def def_stuff(resource, action)
   template resource.name do
     cookbook 'deluge'
-    source 'default_file.erb'
+    source 'systemd.erb'
     variables ({
       user: new_resource.user,
       group: new_resource.group,
