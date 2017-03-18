@@ -1,7 +1,7 @@
 use_inline_resources
 
 action :set do
-  new_resource.each do |k,v|
+  new_resource.settings.each do |k,v|
     deluge_setting k do
       value v
 
