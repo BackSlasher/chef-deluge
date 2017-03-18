@@ -1,3 +1,9 @@
+<%
+    config_string='-d'
+    config_string+=" -c #{@config_dir}" if @config_dir
+    config_string+=" -l #{@log_location}" if @log_location
+    config_string+=" -L #{@log_level}" if @log_level
+%>
 # Maintained by chef, cookbook deluge
 [Unit]
 Description=Deluge Bittorrent Client Daemon
