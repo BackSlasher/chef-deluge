@@ -12,3 +12,11 @@ def def_stuff(resource, action)
     })
   end
 end
+
+action :create do
+  def_stuff(new_resource, :create)
+end
+
+action :delete do
+  def_stuff(new_resource, :delete)
+end
