@@ -2,6 +2,7 @@ use_inline_resources
 
 def def_stuff(resource, action)
   template resource.name do
+    cookbook 'deluge'
     source 'auth.erb'
     variables ({
       local_password: resource.local_password,
