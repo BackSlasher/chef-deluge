@@ -1,0 +1,1 @@
+DELUGE_LOGIN='{"host": "venus.lan", "username":"9oXYKsJyYolvKGffjA7h", "password":"!8^DRALbyzkOFRI27#91"}' DELUGE_SETTINGS='{"daemon_port":1}' python files/default/setter.py
