@@ -11,21 +11,11 @@ Defines an auth file (users/passwords) for deluge
 * `users`: Dictionary of `username => password`
 * `auth_file`: Location of file. Defaults to resource name
 
-### `deluge_setting`
-Defines a single setting for Deluge. 
-Actually configured using the console
-
-* `setting`: Setting name. Defaults to resource name
-* `value`: Setting value.
-* `deluge_console`: Path to deluge binary. Defaults to `deluge-console`, which uses path lookup
-* `deluge_config`: Config file. Supplied as an argument for `deluge-console`.
-
 ### `deluge_settings`
-Collection of settings in a dictionary. Uses `deluge_setting`
+Collection of settings in a dictionary. Uses a custom Python script that rides on the Deluge framework.
 
 * `settings`: Dictionary of `name => value`
-* `deluge_console`: Path to deluge binary. Defaults to `deluge-console`, which uses path lookup
-* `deluge_config`: Config file. Supplied as an argument for `deluge-console`.
+* `deluge_config`: Config directory.
 
 ### `deluge_systemd_file`
 SystemD service file generator for a Deluge service.
